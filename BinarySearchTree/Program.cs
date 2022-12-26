@@ -147,7 +147,10 @@ namespace BinarySearchTree136
                             x.preorder(x.root);
                         }
                         break;
-                    case 
+                    case '4':
+                        {
+                            x.postorder(x.root);
+                        }
                 }
             }
         }
