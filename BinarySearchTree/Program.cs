@@ -137,6 +137,11 @@ namespace BinarySearchTree136
                             x.Insert(word);
                         }
                         break;
+                    case '2':
+                        {
+                            x.inorder(x.root);
+                        }
+                        break;
                     case ''
                 }
             }
