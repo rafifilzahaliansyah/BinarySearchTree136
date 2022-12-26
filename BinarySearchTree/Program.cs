@@ -151,6 +151,14 @@ namespace BinarySearchTree136
                         {
                             x.postorder(x.root);
                         }
+                        break;
+                    case '5':
+                        return;
+                    default:
+                        {
+                            Console.WriteLine("invalid option");
+                        }
+                        break;
                 }
             }
         }
