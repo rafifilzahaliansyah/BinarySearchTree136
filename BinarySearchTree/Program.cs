@@ -19,6 +19,16 @@ namespace BinarySearchTree136
             rchild = r;
         }
     }
+    class BinaryTree
+    {
+        public node root;
+
+        public BinaryTree()
+        {
+            root = null;
+        }
+        public void 
+    }
     class Program
     {
         // A node Class const
