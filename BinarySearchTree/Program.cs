@@ -125,6 +125,20 @@ namespace BinarySearchTree136
                 Console.WriteLine("3. perform preorder traversal ");
                 Console.WriteLine("4. perform  postorder traversal ");
                 Console.WriteLine("5. Exit ");
+                Console.Write("\nEnter your choice (1-5) : ");
+                char ch = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine();
+                switch (ch)
+                {
+                    case '1':
+                        {
+                            Console.WriteLine("enter a word : ");
+                            string word = Console.ReadLine();
+                            x.Insert(word);
+                        }
+                        break;
+                    case ''
+                }
             }
         }
     }
