@@ -97,7 +97,17 @@ namespace BinarySearchTree136
         }
         public void postorder(node ptr)
         {
-
+            if (root == null)
+            {
+                Console.WriteLine("tree is empty");
+                return;
+            }
+            if (ptr !=null)
+            {
+                postorder(ptr.lchild);
+                postorder(ptr.rchild);
+                Console.WriteLine(ptr.info + "");
+            }
         }
     }
     class Program
@@ -106,6 +116,16 @@ namespace BinarySearchTree136
 
         static void Main(string[] args)
         {
+            BinaryTree x = new BinaryTree();
+            while(true)
+            {
+                Console.WriteLine("\nMenu");
+                Console.WriteLine("1. Implement Insert Operation ");
+                Console.WriteLine("2. perform in order treversal ");
+                Console.WriteLine("3. perform preorder traversal ");
+                Console.WriteLine("4. perform  postorder traversal ");
+                Console.WriteLine("5. Exit ");
+            }
         }
     }
 }
