@@ -27,7 +27,15 @@ namespace BinarySearchTree136
         {
             root = null;
         }
-        public void 
+        public void Insert (string element)
+        {
+            node tmp, parent = null, currentnode = null;
+            find(element, ref parent,ref currentnode);
+            if(currentnode ! = null)
+            {
+                Console.WriteLine("dupilicate word  not allowed")
+            }
+        }
     }
     class Program
     {
