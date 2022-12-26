@@ -88,6 +88,16 @@ namespace BinarySearchTree136
                 Console.WriteLine("tree is empty");
                 return;
             }
+            if (ptr !=null)
+            {
+                Console.WriteLine(ptr.info + "");
+                preorder(ptr.lchild);
+                preorder(ptr.rchild);
+            }
+        }
+        public void postorder(node ptr)
+        {
+
         }
     }
     class Program
